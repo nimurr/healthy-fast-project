@@ -28,14 +28,22 @@ a{
     margin-top: 25px;
 }
 
+.mobile-manu{
+    display: none;
+}
 
-
+.close{
+     width: 100%;
+}
 
 nav{
+    
+    width: 100%;
     padding: 20px 80px;
     display: flex;
     position: fixed;
-    width: 100%;
+    left: 0;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 20px #888;
@@ -87,8 +95,10 @@ nav{
                
             }
             img{
+                position: relative;
                 width: 90%;
                 height: auto;
+                z-index: -1;
                
             }
         }
@@ -165,3 +175,54 @@ nav{
         }
     }
 }
+
+
+#number-counte {
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 20px #ccc;
+        border-radius: 15px;
+        .col{
+            text-align: center;
+            padding: 100px ;
+            h2{
+                font-size: 45px;
+
+            }
+            p{
+                color: #777;
+            }
+            
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 50px ;
+    background: #222;
+    text-align: center;
+    h2{
+        font-size: 50px;
+        color: #777;
+
+        span{
+            color: tomato;
+        }
+    }
+    p{
+        color: #777;
+        i{
+            color: red;
+        }
+    }
+}
+
+
+
+
+
+
+@import "_responsiv.scss";
